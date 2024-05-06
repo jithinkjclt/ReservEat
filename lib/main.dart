@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:reserveat/ui/Login/Login.dart';
 import 'package:reserveat/ui/homepages/homepages.dart';
 
 void main() {
@@ -13,9 +14,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'ReservEat',
-
-      home: HoemPages(),
+      home: Login(),
     );
   }
 }
-
