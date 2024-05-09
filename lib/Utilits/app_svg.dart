@@ -9,24 +9,24 @@ class AppSvg extends StatelessWidget {
   final void Function()? onPressed;
 
   const AppSvg({
-    Key? key,
+    super.key,
     required this.assetName,
     this.color,
     this.width,
     this.height,
     this.fit = BoxFit.contain,
     this.onPressed,
-  }) : super(key: key);
+  });
 
   const AppSvg.clickable({
-    Key? key,
+    super.key,
     required this.assetName,
     this.color,
     this.width,
     this.height,
     this.fit = BoxFit.contain,
     required this.onPressed,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
